@@ -1,0 +1,149 @@
+:root {
+    --uni-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --light-c: #EAEEED;
+    --dark-c: #4A413C;
+    --accent-c: #bba295;
+    --shadow-c: #5c857a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: var(--dark-c);
+    font-family: var(--uni-font);
+}
+
+/* --- Navigation --- */
+.nav {
+    position: sticky;
+    top: 0; /* Ensures sticky actually works */
+    padding: 1.3rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Vertically aligns logo and items perfectly */
+    color: var(--light-c);
+    font-size: 1.1rem;
+    gap: 3rem;
+    background-color: var(--accent-c);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.493);
+    border-radius: 0 0 rem 0.5rem;    
+    z-index: 10;
+}
+
+.main{
+    display:flex;
+    gap:4rem; 
+}
+.logo {
+    margin-right: auto;
+    color: #ffeb3b; /* Unified yellow hex */
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(126, 70, 70);
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-c);
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+    box-shadow: inset 0 -2px 0 hsla(175, 100%, 54%, 0.678); 
+    color: rgb(206, 197, 185);
+    transform: translateY(-2px); /* Cleaner UI animation than scaling the whole link */
+}
+
+/* --- Logout Button --- */
+.logout {
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    background-color: chartreuse;
+    color: #222; /* High contrast text color */
+}
+
+.logout:hover {
+    box-shadow: 0 0 20px 2px hsla(175, 100%, 54%, 0.678); 
+    color: #fff;
+    background-color: red;
+    transform: scale(1.05); /* Marginally reduced to prevent jarring layout shifts */
+}
+
+/* --- Cart Section --- */
+
+
+.sidebar-cart {
+
+    position: relative;
+    top: 1rem;
+    left: 0.4rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.cart-text {
+    padding: 1rem;
+    text-align: center;
+    background-color: #382a24;
+    color: var(--light-c);
+    font-size: 1.3rem;
+    border-radius: 10px 10px 0 0; /* Merged seamlessly with table top */
+
+    z-index: 2;
+}
+
+.table {
+    background-color: rgba(245, 245, 245, 0.1);
+    height: calc(100vh - 17rem); /* Dynamic constraint based on viewport height */
+    overflow-y: auto; /* 'auto' behaves cleaner than 'scroll' when empty */
+    border-radius: 0 0 10px 10px;
+    border: 1px solid rgba(32, 18, 18, 0.2);
+    box-shadow: 0 0.2rem 10px;
+    z-index: 1;   
+}
+
+.user-final{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.final-submit{
+    margin-top: 0.5rem;
+    padding: 10px;
+    background-color: #07ffc9;
+    border: 0.1rem solid rgba(255, 2, 2, 0.836);
+    border-radius: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+    font-size: larger;
+    box-shadow: 0rem 0.22rem 5px rgb(54, 18, 18);
+}
+
+.final-submit:active{
+    transition: cubic-bezier(0.075, 0.82, 1, 1);
+    transform: scale(1.011);
+    background-color: #4bff04;
+     
+}
+.total{
+    position:relative;
+    background-color: #fff;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 0.1rem solid hsl(281, 61%, 11%);
+    border-radius: 1rem;
+    box-shadow: 0rem 0.22rem 5px rgb(54, 18, 18);
+    font-size: large;
+
+}
+::-webkit-scrollbar {
+  width: 0px; /* Width for vertical scrollbars */
+  height: 10px; /* Height for horizontal scrollbars */
+}

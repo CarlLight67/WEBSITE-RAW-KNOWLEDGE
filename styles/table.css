@@ -1,0 +1,19 @@
+.addedItem {
+    z-index: 10000;
+    font-size: larger;
+    margin-left: 0.5srem;
+    height: 2.5rem;
+    border: 0.1px solid rgb(240, 240, 240);
+    overflow-wrap: anywhere;
+    max-width: 21rem; 
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    max-height:2.5rem;
+    padding-bottom: 2rem;
+    overflow: auto;
+}
+.cartItemPrice{
+    font-family: sans-serif;
+    color: rgb(238, 237, 237);
+}

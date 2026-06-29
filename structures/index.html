@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Shop</title>
+    <meta name="description" content="Carl's Projects - Online Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/items.css">
+    <link rel="stylesheet" href="../styles/table.css">
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="logo">KASHOP XD</div>
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a> <a href="#" class="logout">LOG-OUT</a>
+    </nav>
+
+
+<div class="main">
+
+    
+    <!--THIS IS FOR THE WHOLE CART ON THE SIDE-->
+    <main class="sidebar-cart">
+
+
+        <h2 class="cart-text">CART</h2>
+
+        
+        <!--THIS IS FOR THE TABLE OF THE ADDED ITEMS (USER SELECTED ITEMS) THIS MUST BE COMPUTE ALL AFTER THE USER CLICK THE BUTTON "SUBMIT ITEM"-->
+        <div class="table" id="table">
+            
+            
+            <!--THIS SECTION WHERE THE USER WANT TO BUY-->
+            <div class="addedItem">
+
+            </div>
+
+        </div>
+
+
+
+        <!--THIS IS THE PLACE WHERE THE USER WILL SUM UP ALL OF THE DATA VALUE OF THE SELECTED ITEMS TOTAL-->
+        <div class="user-final">
+
+            <button class="final-submit" id="final-submit">SUBMIT ITEMS</button>
+
+            <span id="total" class="total">TOTAL : ₱ 0.00</span>
+
+        </div>
+        
+    </main>
+
+<!--THIS IT THE LOCATION OF ALL PRODUCT THAT HE/SHE WANT TO BUY,INSHORT USER MARKET PLACE-->
+
+<div class="list-items" id="list-items">
+        
+
+
+        <div class="container">
+
+            <!--use this on the jv then im gonna make-->
+            <div class="item" id="item"><!--start of the item-->
+
+                <span class="price" id="price">₱20</span>
+    
+                <span class="product" id="product">PIATOS</span>
+    
+                <div class="cart-container">
+    
+                    <button class="btnA" id="btnAdd">➕</button>
+        
+                    <input type="number" class="valueItem" id="valueItem1" maxlength="99" minlength="0" value="0">
+                    
+        
+                    <button class="btnR" id="btnD">➖</button>
+        
+                    <button class="addCart" id="addCart">CART</button>
+    
+                </div>
+
+                
+
+            </div><!--end of the  item-->
+
+            
+
+
+
+
+
+
+        </div><!--end of  container-->
+            
+    </div> <!--end of  list-->
+
+
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>  

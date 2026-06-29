@@ -1,0 +1,23 @@
+            <!--use this on the jv then im gonna make-->
+            <div class="item" id="item"><!--start of the item-->
+
+                <span class="price" id="price">₱20</span>
+    
+                <span class="product" id="product">PIATOS</span>
+    
+                <div class="cart-container">
+    
+                    <button class="btnA" id="btnAdd">➕</button>
+        
+                    <input type="number" class="valueItem" id="valueItem1" maxlength="99" minlength="0" value="0">
+                    
+        
+                    <button class="btnR" id="btnD">➖</button>
+        
+                    <button class="addCart" id="addCart">CART</button>
+    
+                </div>
+
+                
+
+            </div><!--end of the  item-->
